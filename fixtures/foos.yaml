@@ -1,0 +1,11 @@
+App\Entity\Foo:
+  foo_{1..5}:
+    name: 'Foo <current()>'
+    tags:
+      - '@tag_<(($current - 1) * 4 + 1)>'
+      - '@tag_<(($current - 1) * 4 + 2)>'
+      - '@tag_<(($current - 1) * 4 + 3)>'
+      - '@tag_<(($current - 1) * 4 + 4)>'
+    bars:
+      - '@bar_<(($current - 1) * 2 + 1)>'
+      - '@bar_<(($current - 1) * 2 + 2)>'
