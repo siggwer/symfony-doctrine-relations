@@ -120,6 +120,7 @@ class Foo
     }
 
     /**
+     * Seulement utile pour le chargement des fixtures
      * @param Tag[]|Collection $tags
      */
     public function setTags($tags): void
